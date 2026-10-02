@@ -1,0 +1,18 @@
+bundle:
+  name: dab_practice
+
+resources:
+  jobs:
+    hello_job:
+      name: hello_job
+      tasks:
+        - task_key: hello_task
+          notebook_task:
+            notebook_path: /Workspace/Users/nehadeb792001@outlook.com/dab-practice
+            source: WORKSPACE
+
+targets:
+  dev:
+    mode: development
+    workspace:
+      host: https://adb-7405614180530539.19.azuredatabricks.net/
